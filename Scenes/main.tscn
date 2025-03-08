@@ -266,7 +266,6 @@ height = 64
 [node name="Pipe3" parent="Environment/Pipes" instance=ExtResource("5_om4pi")]
 position = Vector2(472, 24)
 height = 100
-is_traversable = true
 
 [node name="Pipe4" parent="Environment/Pipes" instance=ExtResource("5_om4pi")]
 position = Vector2(2664, 56)
