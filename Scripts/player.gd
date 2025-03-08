@@ -8,7 +8,6 @@ signal castle_entered
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 enum PlayerMode {
-	SMALL,
 	BIG,
 	SHOOTING
 }
@@ -49,7 +48,7 @@ const FIREBALL_SCENE = preload("res://Scenes/fireball.tscn")
 @export_group("")
 
 @export var castle_path: PathFollow2D
-var player_mode = PlayerMode.SMALL
+var player_mode = PlayerMode.BIG
 
 
 # Player state flags
@@ -139,14 +138,14 @@ func handle_enemy_collision(enemy: Enemy):
 			die()
 			
 func handle_shroom_collision(area: Node2D):
-	if player_mode == PlayerMode.SMALL:
+	if player_mode == PlayerMode.BIG:
 		set_physics_process(false)
 		animated_sprite_2d.play("small_to_big")	
 		set_collision_shapes(false)
 
 func handle_flower_collision():
 	set_physics_process(false)
-	var animation_name = "small_to_shooting" if player_mode == PlayerMode.SMALL else "big_to_shooting"
+	var animation_name = "big_to_shooting"
 	animated_sprite_2d.play(animation_name)
 	set_collision_shapes(false)
 
@@ -160,7 +159,7 @@ func on_enemy_stomped():
 	velocity.y = stomp_y_velocity
 
 func die():
-	if player_mode == PlayerMode.SMALL:
+	if player_mode == PlayerMode.BIG:
 		is_dead = true
 		animated_sprite_2d.play("death")
 
@@ -278,4 +277,4 @@ func finish():
 	castle_entered.emit()
 
 func get_half_sprite_size():
-	return 8 if player_mode == PlayerMode.SMALL else 16
+	return 16

@@ -32,8 +32,6 @@ func _on_animation_finished():
 		reset_player_properties()
 		match get_parent().player_mode:
 			Player.PlayerMode.BIG:
-				get_parent().player_mode = Player.PlayerMode.SMALL
-			Player.PlayerMode.SMALL:
 				get_parent().player_mode = Player.PlayerMode.BIG
 	if animation == "small_to_shooting" || animation == "big_to_shooting":
 		reset_player_properties()

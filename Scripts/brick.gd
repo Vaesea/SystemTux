@@ -6,7 +6,7 @@ class_name Brick
 @onready var sprite_2d = $Sprite2D
 
 func bump(player_mode: Player.PlayerMode):
-	if player_mode == Player.PlayerMode.SMALL:
+	if player_mode == Player.PlayerMode.BIG:
 		super.bump(player_mode)
 	
 	elif !gpu_particles_2d.emitting:

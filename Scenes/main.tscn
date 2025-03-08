@@ -333,70 +333,104 @@ position = Vector2(3192, 69)
 [node name="Clouds" type="Node" parent="Decorations"]
 
 [node name="Cloud1" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(-120, -48)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud4" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(112, -64)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud5" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(520, -80)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud6" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(672, -80)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud9" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(1536, -64)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud10" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(1656, -88)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud11" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(1736, -72)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud14" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(2440, -56)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud17" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(3200, -136)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud2" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(432, -80)
 texture = ExtResource("13_mpiqk")
 
 [node name="Cloud8" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(1160, -88)
 texture = ExtResource("13_mpiqk")
 
 [node name="Cloud16" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(3088, -144)
 texture = ExtResource("13_mpiqk")
 
 [node name="Cloud13" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(2080, -80)
 texture = ExtResource("13_mpiqk")
 
 [node name="Cloud3" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(272, -48)
 texture = ExtResource("14_vx0fg")
 
 [node name="Cloud7" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(920, -88)
 texture = ExtResource("14_vx0fg")
 
 [node name="Cloud12" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(1832, -88)
 texture = ExtResource("14_vx0fg")
 
 [node name="Cloud15" type="Sprite2D" parent="Decorations/Clouds"]
+show_behind_parent = true
+z_index = -1
 position = Vector2(2960, -88)
 texture = ExtResource("14_vx0fg")
 
